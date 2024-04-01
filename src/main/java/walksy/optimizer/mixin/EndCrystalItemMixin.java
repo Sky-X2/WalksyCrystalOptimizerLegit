@@ -28,16 +28,6 @@ import static walksy.optimizer.WalksyCrystalOptimizerMod.mc;
 @Mixin({EndCrystalItem.class})
 public class EndCrystalItemMixin {
 
-
-    /**
-     * @Author Walksy
-     */
-
-
-    /**
-     * Stops crystals from decreasing too much
-     * PS: does not work on singleplayer
-     */
     @Inject(method = {"useOnBlock"}, at = {@At("HEAD")}, cancellable = true)
     private void modifyDecrementAmount(ItemUsageContext context, CallbackInfoReturnable<ActionResult> cir) {
         ItemStack mainHandStack = mc.player.getMainHandStack();
