@@ -39,10 +39,6 @@ import static walksy.optimizer.WalksyCrystalOptimizerMod.mc;
 @Mixin(ClientPlayerEntity.class)
 public abstract class ClientPlayerEntityMixin {
 
-    /**
-     * @Author Walksy
-     */
-
 
     @Inject(at = @At(value = "INVOKE", target = "Lnet/minecraft/client/network/AbstractClientPlayerEntity;tick()V", ordinal = 0), method = "tick()V")
     private void useOwnTicks(CallbackInfo ci) {
