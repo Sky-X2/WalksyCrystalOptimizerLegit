@@ -3,15 +3,11 @@
   "id": "walksycrystaloptimizer",
   "version": "${version}",
 
-  "name": "Walksy Optimizer",
-  "description": "[Legit version] Allows you to place crystals much faster",
+  "name": "Fast Crystals",
+  "description": "Improves crystal speed.",
   "authors": [
-    "Walksy",
-    "Michael_Scopic"
+    "Ghost"
   ],
-  "contact": {
-    "homepage": "https://github.com/Walksy"
-  },
 
   "icon": "assets/optimizer/icon.png",
 
@@ -26,7 +22,5 @@
     "crystaloptimizer.mixins.json"
   ],
 
-  "depends": {
-    "midnightlib": "*"
-  }
+  "depends":
 }
