@@ -34,8 +34,6 @@ import java.util.List;
 public class WalksyCrystalOptimizerMod implements ClientModInitializer {
     public static MinecraftClient mc;
 
-    // just because his mod works, doesn't mean it should be banned - Walksy's Mother
-
     @Override
     public void onInitializeClient() {
         mc = MinecraftClient.getInstance();
@@ -79,16 +77,6 @@ public class WalksyCrystalOptimizerMod implements ClientModInitializer {
                 || isLookingAt(Blocks.BEDROCK, generalLookPos().getBlockPos())))
         {
             sendInteractBlockPacket(generalLookPos().getBlockPos(), generalLookPos().getSide());
-            // These lines below is the Auto Crystal feature. I commented these out to remove that feature.
-            /*if (canPlaceCrystalServer(generalLookPos().getBlockPos())) {
-                mc.player.swingHand(mc.player.getActiveHand());
-            }*/
-            
-            /*  Basically what the above if-statement does is if you are looking at bedrock/obsidian
-                (and holding a crystal), it will send a hand swing packet to the server saying that you 
-                placed an end crystal (even though you really didn't). This is considered cheating by 
-                many servers, hence why this optimizer is commonly banned.
-            */
         } 
     }
 
