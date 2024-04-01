@@ -20,7 +20,6 @@ public abstract class MinecraftClientMixin {
         if (EnableOptimizerCommand.fastCrystal) {
             ItemStack mainHand = mc.player.getMainHandStack();
             if (mainHand.isOf(Items.END_CRYSTAL))
-                //ensures only are packets are being sent through
                 if (WalksyCrystalOptimizerMod.hitCount != limitPackets())
                     ci.cancel();
         }
