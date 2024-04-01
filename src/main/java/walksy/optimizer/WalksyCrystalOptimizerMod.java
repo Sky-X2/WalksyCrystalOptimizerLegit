@@ -154,8 +154,6 @@ public class WalksyCrystalOptimizerMod implements ClientModInitializer {
         if (playerListEntry == null) return 0;
         return playerListEntry.getLatency();
     }
-
-  // I think this is the AutoCrystal feature, not sure.
   
   private static boolean canPlaceCrystalServer(BlockPos block) {
         BlockState blockState = mc.world.getBlockState(block);
